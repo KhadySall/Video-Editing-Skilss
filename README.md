@@ -42,7 +42,7 @@ On macOS/Linux, activate with `source .venv/bin/activate`. See `docs/INSTALLATIO
 If Claude Code is not installed on Windows, run `winget install Anthropic.ClaudeCode`. Then open PowerShell:
 
 ```powershell
-cd "C:\Users\sarah\OneDrive - IPSA\Documents\ChatGPT\AI Capcut"
+cd "C:\Users\sarah\Documents\video-editing-skills"
 claude
 ```
 
