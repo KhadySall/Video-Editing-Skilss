@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "project": "replace-me",
+  "sourceDurationMs": 1000,
+  "status": "planning",
+  "editorialSummary": {"hook": "", "argument": "", "payoff": "", "cta": ""},
+  "keep": [{"startMs": 0, "endMs": 1000, "reason": "Example only; replace after transcript and listening review"}],
+  "beats": [{"sourceStartMs": 0, "sourceEndMs": 1000, "purpose": "", "captionIntent": "", "visual": "", "audioCue": null, "reason": ""}],
+  "decisions": [],
+  "qc": {"technical": "pending", "visual": "pending", "listenedThrough": false}
+}

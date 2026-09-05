@@ -1,0 +1,38 @@
+{
+  "name": "video-editing-skills",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Speech-first editing, motion design, captions and verified social video delivery for Claude Code",
+  "engines": {"node": ">=22 <25"},
+  "scripts": {
+    "studio": "remotion studio src/index.ts --no-open --port=3047",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "doctor": "node --experimental-strip-types scripts/media.mjs doctor",
+    "media": "node --experimental-strip-types scripts/media.mjs",
+    "transcript": "node --experimental-strip-types scripts/transcript.ts",
+    "skills:install": "node scripts/install-remotion-skills.mjs",
+    "sfx:generate": "node scripts/generate-sfx.mjs",
+    "demo:assets": "node scripts/demo-assets.mjs",
+    "demo:render": "node scripts/render.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "5.2.8",
+    "@remotion/captions": "4.0.521",
+    "@remotion/cli": "4.0.521",
+    "@remotion/media": "4.0.521",
+    "@remotion/transitions": "4.0.521",
+    "lucide-react": "0.468.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.521"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

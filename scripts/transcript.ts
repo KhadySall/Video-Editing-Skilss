@@ -1,0 +1,11 @@
+import {readFileSync, writeFileSync} from 'node:fs';
+import {captionPages, remapTranscript, toSrt, validateTranscript} from '../src/utilities/timeline.ts';
+const [command, source, editOrOutput, output] = process.argv.slice(2);
+const read = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+if (!source) throw new Error('Usage: npm run transcript -- validate file.json | remap source.json edit.json output.json | srt file.json output.srt');
+const t = read(source);
+validateTranscript(t);
+if (command === 'validate') console.log(`Valid: ${t.words.length} words, ${t.durationMs} ms, ${t.timebase}`);
+else if (command === 'remap' && output) writeFileSync(output, JSON.stringify(remapTranscript(t, read(editOrOutput)), null, 2), {flag: 'wx'});
+else if (command === 'srt' && editOrOutput) writeFileSync(editOrOutput, toSrt(captionPages(t.words)), {flag: 'wx'});
+else throw new Error('Invalid command or missing output');

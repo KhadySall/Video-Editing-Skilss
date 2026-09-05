@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "project": "career-demo",
+  "sourceDurationMs": 14400,
+  "status": "render-ready",
+  "editorialSummary": {"hook": "A CV has no universal score.", "argument": "A match is relative to the role.", "payoff": "Tailor honest evidence to each role.", "cta": "None; educational close."},
+  "keep": [{"startMs": 0, "endMs": 14400, "reason": "Synthetic fixture contains only intended material"}],
+  "beats": [
+    {"sourceStartMs": 0, "sourceEndMs": 4600, "purpose": "Hook", "captionIntent": "Direct claim", "visual": "CV card", "audioCue": "impact-low", "reason": "Establish the object and challenge the premise"},
+    {"sourceStartMs": 4600, "sourceEndMs": 9200, "purpose": "Contrast", "captionIntent": "Explain variability", "visual": "Two illustrative role matches", "audioCue": "whoosh-short", "reason": "Comparison explains why one score cannot be universal"},
+    {"sourceStartMs": 9200, "sourceEndMs": 14400, "purpose": "Payoff", "captionIntent": "Actionable advice", "visual": "Three-step checklist", "audioCue": "success-chime", "reason": "Convert explanation into useful behavior"}
+  ],
+  "decisions": ["Percentages are explicitly labelled illustrative", "No silence cuts are needed for the fixture"],
+  "qc": {"technical": "pass", "visual": "pass", "listenedThrough": false, "note": "Human playback listening remains required; automated audio checks passed."}
+}
