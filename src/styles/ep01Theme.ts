@@ -1,16 +1,21 @@
-// Dark premium palette for Episode 1 "Le rapport de pouvoir".
+// Light, educational palette for the "Psychologie du recrutement" series.
 export const ep01 = {
   colors: {
-    bg0: '#080B11',
-    bg1: '#0F1826',
-    panel: 'rgba(255,255,255,0.045)',
-    panelBorder: 'rgba(255,255,255,0.10)',
-    text: '#F3F7FB',
-    muted: '#93A4B3',
-    gold: '#F6B94D', // power / authority
-    teal: '#37E0BE', // collaboration / balance
-    coral: '#FF6B6B', // imbalance / warning
-    ink: '#0A0E14',
+    paper: '#F6F1E7', // warm cream paper
+    paper2: '#EFE7D5',
+    card: '#FFFFFF',
+    cardBorder: 'rgba(34,48,58,0.10)',
+    ink: '#21303A', // main text
+    inkSoft: '#5D6B74', // secondary text
+    indigo: '#5A46E0', // psychology / primary
+    indigoSoft: '#EDEAFB',
+    amber: '#EF9D33', // energy / company
+    amberSoft: '#FCEBD2',
+    green: '#149C81', // positive / you
+    greenSoft: '#D9F1EB',
+    coral: '#E0503C', // warning / imbalance
+    coralSoft: '#FADFD9',
+    line: 'rgba(34,48,58,0.14)',
   },
   font: 'Inter, system-ui, sans-serif',
   spring: {damping: 22, stiffness: 150, mass: 0.9},
