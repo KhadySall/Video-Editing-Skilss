@@ -432,9 +432,8 @@ export const Ep01RapportDePouvoir = () => {
   return (
     <AbsoluteFill style={{fontFamily: T.font, backgroundColor: C.bg0, color: C.text}}>
       <Background />
-      {/* audio */}
-      <Audio src={staticFile('media/ep01/narration.wav')} />
-      <Audio src={staticFile('media/ep01/music-bed.wav')} volume={0.10} />
+      {/* audio (voix off retiree a la demande: montage seul, musique + sfx) */}
+      <Audio src={staticFile('media/ep01/music-bed.wav')} volume={0.18} />
       {/* sfx (restrained) */}
       <Sfx at={f(startMsOf(1)) - 3} src="media/ep01/impact-low.wav" volume={0.32} />
       <Sfx at={f(startMsOf(2)) - 4} src="media/ep01/whoosh-short.wav" volume={0.28} />
